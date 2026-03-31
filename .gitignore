@@ -10,4 +10,6 @@ wheels/
 .venv
 
 my_notes.md
+scratch.py
+
 ticker_db/
