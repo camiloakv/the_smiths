@@ -10,3 +10,4 @@ wheels/
 .venv
 
 my_notes.md
+ticker_db/
