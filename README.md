@@ -7,5 +7,6 @@ Agentic system with LangChain, MCP, and A2A.
 ## Steps:
 
 - ✅ Server tools. Available through MCP Inspector with `uv run mcp dev server.py`
-- Server + agent, manual calling.
+- ✅ Server + Agent, manual calling with `uv run agent.py`
+- ...
 
