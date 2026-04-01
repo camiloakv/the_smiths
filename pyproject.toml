@@ -1,11 +1,12 @@
 [project]
 name = "the-smiths"
 version = "0.1.0"
-description = "Agentic system with LangChain and MCP"
+description = "Agentic system with LangChain, MCP, and A2A"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "chromadb>=1.5.5",
     "mcp[cli]>=1.26.0",
+    "smolagents[litellm,mcp]>=1.24.0",
     "yfinance>=1.2.0",
 ]

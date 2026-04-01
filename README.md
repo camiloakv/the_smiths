@@ -1,8 +1,8 @@
 # The Smiths
 
-Agentic system with LangChain and MCP.
+Agentic system with LangChain, MCP, and A2A.
 
-(github.com/modelcontextprotocol/python-sdk)[https://github.com/modelcontextprotocol/python-sdk]
+[https://github.com/modelcontextprotocol/python-sdk](github.com/modelcontextprotocol/python-sdk)
 
 ## Steps:
 
