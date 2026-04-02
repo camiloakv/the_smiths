@@ -1,7 +1,7 @@
-<p align='center' style="font-size: 5rem; font-family: 'Times New Roman', serif; color: #F04D6A; line-height: 0.9;">
+<p align='center' style="font-size: 4rem; font-family: 'Times New Roman', serif; color: #F04D6A; line-height: 0.9;">
 THE SMITHS
 </p>
-<p align='center' style="font-size: 1.5rem; font-family: 'Times New Roman', serif; color: #F04D6A; line-height: 0.9;"><i>
+<p align='center' style="font-size: 1.2rem; font-family: 'Times New Roman', serif; color: #F04D6A; line-height: 0.9;"><i>
 Agentic system with LangChain, MCP, and A2A
 </i></p>
 
