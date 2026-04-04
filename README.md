@@ -1,5 +1,11 @@
 # THE SMITHS
 
+<!--
+https://github.com/mcpx-dev/mcp-badges
+-->
+
+<p><img src="https://badge.mcpx.dev" title="MCP"/></p>
+
 Agentic system with LangChain, MCP, and A2A
 
 [https://github.com/modelcontextprotocol/python-sdk](github.com/modelcontextprotocol/python-sdk)
@@ -10,12 +16,6 @@ Agentic system with LangChain, MCP, and A2A
 - [x] Server + Agent, manual calling with `uv run agent.py`
 - [ ] ...
 
-
-<!--
-https://github.com/mcpx-dev/mcp-badges
--->
-
-<p><img src="https://badge.mcpx.dev" title="MCP"/></p>
 
 
 
