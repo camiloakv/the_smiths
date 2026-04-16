@@ -1,11 +1,12 @@
-# Import yahoo finance
 import yfinance as yf
 # Bring in colorama for fancy printing
 #X from colorama import Fore
 # Bring in MCP Server SDK
 from mcp.server.fastmcp import FastMCP
-# Create server
-mcp = FastMCP("yfinanceserver")
+
+
+mcp = FastMCP("server-yfinance")
+
 
 ## Add in a prompt function
 #@mcp.prompt()
