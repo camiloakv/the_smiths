@@ -26,10 +26,10 @@ class DeleteTodoInput(BaseModel):
     id: str
 
 
-server = FastMCP(name="server-todos") #, version="1.0.0")  #version no longer accepted
+mcp = FastMCP(name="server-todos") #, version="1.0.0")  #version no longer accepted
 
 
-@server.tool(name="create_todo", description="Create a new todo")
+@mcp.tool(name="create_todo", description="Create a new todo")
 def create_todo(data: CreateTodoInput) -> Todo:
     todo_id = str(uuid4())
     todo = Todo(id=todo_id, title=data.title)
@@ -37,12 +37,12 @@ def create_todo(data: CreateTodoInput) -> Todo:
     return todo
 
 
-@server.tool(name="list_todos", description="List all todos")
+@mcp.tool(name="list_todos", description="List all todos")
 def list_todos() -> List[Todo]:
     return list(todos.values())
 
 
-@server.tool(name="get_todo", description="Retrieve a todo by ID")
+@mcp.tool(name="get_todo", description="Retrieve a todo by ID")
 def get_todo(data: GetTodoInput) -> Todo:
     todo = todos.get(data.id)
     if not todo:
@@ -50,7 +50,7 @@ def get_todo(data: GetTodoInput) -> Todo:
     return todo
 
 
-@server.tool(name="update_todo", description="Update a todo")
+@mcp.tool(name="update_todo", description="Update a todo")
 def update_todo(data: UpdateTodoInput) -> Todo:
     todo = todos.get(data.id)
     if not todo:
@@ -63,7 +63,7 @@ def update_todo(data: UpdateTodoInput) -> Todo:
     return todo
 
 
-@server.tool(name="delete_todo", description="Delete a todo")
+@mcp.tool(name="delete_todo", description="Delete a todo")
 def delete_todo(data: DeleteTodoInput) -> dict:
     if data.id not in todos:
         raise ValueError(f"Todo with id {data.id} not found")
@@ -72,4 +72,4 @@ def delete_todo(data: DeleteTodoInput) -> dict:
 
 
 if __name__ == '__main__':
-    server.run(transport='stdio')
+    mcp.run(transport='stdio')
