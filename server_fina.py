@@ -1,7 +1,7 @@
 import yfinance as yf
 # Bring in colorama for fancy printing
 #X from colorama import Fore
-# Bring in MCP Server SDK
+
 from mcp.server.fastmcp import FastMCP
 
 

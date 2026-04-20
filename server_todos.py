@@ -26,7 +26,7 @@ class DeleteTodoInput(BaseModel):
     id: str
 
 
-mcp = FastMCP(name="server-todos") #, version="1.0.0")  #version no longer accepted
+mcp = FastMCP(name="server-todos") #, version="1.0.0")  #version no longer accepted?
 
 
 @mcp.tool(name="create_todo", description="Create a new todo")
