@@ -9,9 +9,9 @@ from mcp.server.fastmcp import FastMCP
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import SKLearnVectorStore
 
-#from dotenv import load_dotenv, find_dotenv
-#
-#load_dotenv(find_dotenv())
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 # Define common path to the repo locally
 PATH = "./data/"  # TODO: generalize
