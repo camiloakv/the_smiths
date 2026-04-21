@@ -18,7 +18,7 @@ mcp = FastMCP("server-yfinance")
 #
 ## Add in a resource function
 #import chromadb
-#chroma_client = chromadb.PersistentClient(path="ticker_db")
+#chroma_client = chromadb.PersistentClient(path="data/fina/ticker_db")
 #collection = chroma_client.get_collection(name="stock_tickers")
 #@mcp.resource("tickers://search/{stock_name}")
 #def list_tickers(stock_name:str)->str:

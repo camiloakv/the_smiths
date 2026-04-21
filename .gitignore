@@ -13,7 +13,4 @@ wheels/
 my_notes.md
 scratch.py
 
-# TODO: join ticker_db/ and data/
-ticker_db/
-
 data/
