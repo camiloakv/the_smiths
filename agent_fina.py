@@ -2,7 +2,8 @@ from smolagents import ToolCallingAgent, ToolCollection, LiteLLMModel
 from mcp import StdioServerParameters
 
 #model = LiteLLMModel(model_id="ollama_chat/qwen2.5:14b", num_ctx=4096)
-model = LiteLLMModel(model_id="ollama_chat/gemma4:31b", num_ctx=4096)
+#model = LiteLLMModel(model_id="ollama_chat/gemma4:31b", num_ctx=4096)
+model = LiteLLMModel(model_id="ollama_chat/gemma4:latest", num_ctx=4096)
 
 server_parameters = StdioServerParameters(
     command="uv",
