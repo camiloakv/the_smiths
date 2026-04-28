@@ -57,7 +57,7 @@ def stock_price(stock_ticker: str) -> str:
     last_months_closes = historical_prices['Close']
     #X print(Fore.YELLOW + str(last_months_closes))
     print(str(last_months_closes))
-    return str(f"Stock price over the last month for {stock_ticker}: {last_months_closes}")
+    return f"Stock price over the last month for {stock_ticker}: {last_months_closes}"
 
 # Add in a stock info tool
 @mcp.tool()
