@@ -16,7 +16,7 @@ class CreateTodoInput(BaseModel):
 
 class UpdateTodoInput(BaseModel):
     id: str
-    title: str = None
+    title: str | None = None
     completed: bool = None
 
 class GetTodoInput(BaseModel):
